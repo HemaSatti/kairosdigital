@@ -1,0 +1,149 @@
+.bg-page {
+  margin: 20px;
+  font-family: Roboto !important;
+}
+.bg-img{
+  background-image: url("../../assets/images/Kairos_Digital_Transformation_Assessment_Tool_Screen1.jpg");
+  width:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+.hea-change{
+  text-align: center;
+  color: lavender;
+}
+.example-card {
+  max-width: 750px;
+  padding: 2.3em;
+  width: 80%;
+  margin: 1em auto;
+  background: #ffffffe6;
+  margin-top: 3em;
+  border-bottom: 5px solid #0A6EB7;
+}
+.hea-change1{
+  text-align: left;
+  color: #0A6EB7;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+.bg-text p{
+  font-size: 12px;
+}
+.example-full-width {
+  width: 100%;
+}
+.alert {
+  animation: 2s alertAnim forwards;
+  font-size: 12px;
+  position: relative;
+  padding: 0.05rem 0rem;
+  border: 1px solid transparent;
+  color: red;
+  margin: 0px;
+  margin-top: -15px;
+}
+.row {
+  margin-top: 1rem;
+}
+/*a {*/
+/*  margin: 1em 2em;*/
+/*  float: right;*/
+/*  color: #ffff;*/
+/*}*/
+
+/*.form-control {*/
+/*  background: transparent;*/
+/*}*/
+
+.btn-info{
+  margin: 1em auto;
+  align-items: center;
+  border-radius: 0px;
+  background-color: #0A6EB7;
+  border-color: #0A6EB7;
+}
+.mat-form-field-ripple {
+  background-color: #0A6EB7 !important;;
+}
+.mat-form-field-label-wrapper{
+  font-weight: 500!important;
+  color:#000!important;
+}
+
+@media(min-width:320px) and (max-width:599px) {
+  .bg-img{
+    background-image: url("../../assets/images/Kairos_Digital_Transformation_Assessment_Tool_Screen1_mobile.jpg");
+    overflow: scroll;
+  }
+  .example-card {
+    width: 87%;
+    margin-top: 20px;
+  }
+  .bg-text p{
+    font-size: 10px;
+  }
+  .hea-change{
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .bg-text {
+    font-size: 10px;
+  }
+  .btn-info {
+    margin: 10px auto;
+    align-items: center;
+  }
+  .hea-change1 {
+    font-size: 14px;
+  }
+  .imgStyles {
+    width: 120px;
+  }
+  .row {
+    margin-top: 0px;
+  }
+}
+
+@media(min-width:600px) and (max-width: 1023px)  {
+  .example-card {
+    width: 87%;
+    margin-top: 1em;
+    overflow: scroll;
+  }
+  .bg-img{
+    overflow: scroll;
+  }
+  .alert {
+    font-size: 14px;
+  }
+  .btn-info{
+    margin: 2em auto;
+    align-items: center;
+  }
+  .hea-change{
+   font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .example-card {
+    width: 90%;
+    margin-top: 1em;
+  }
+  .bg-img{
+    overflow: scroll;
+  }
+  .hea-change{
+    margin-top: 20px;
+    font-size: 26px;
+  }
+}
+

@@ -1,0 +1,141 @@
+<div class="container">
+  <div class="bg-page">
+    <div class="bg-img">
+
+      <div>
+        <img class="imgStyles" src='../../assets/images/Kairos_Logo_new.png'>
+        <h3 class="hea-change">Social Presence</h3>
+        </div>
+
+      <mat-card class="example-card" >
+
+        <form [formGroup]="sampleDetails" (ngSubmit)="submitVal()" *ngIf="!showMsg">
+          <div>
+
+            <div>
+              <label>Please provide links, if any, of your social media handles.</label>
+              <div class=" colstyles">
+
+                <div>
+                  <div class="row">
+                    <div class="iconStyle">
+                      <a> <i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                    <div class="textStyle">
+                      <input formControlName="linkedin" placeholder="linkedin Url" class=" form-control val1">
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="iconStyle">
+                      <a><i class="fab fa-facebook-square fa-2x"></i></a>
+                    </div>
+                    <div class="textStyle">
+                      <input formControlName="facebook" placeholder="Facebook Url" class="form-control val1">
+                    </div>
+                  </div>
+
+                <div>
+                  <div class="row">
+                    <div class="iconStyle">
+                      <a><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </div>
+                    <div class="textStyle">
+                      <input formControlName="twitter" placeholder="Twitter Url" class=" form-control val1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+              <label>What are the names of your Mobility apps.</label>
+              <div class="colstyles">
+                <div class="row">
+                  <div class="iconStyle">
+                    <a><i class="fab fa-app-store-ios fa-2x"></i></a>
+                  </div>
+                  <div class="textStyle">
+                    <input style="margin-left: 3px" placeholder="AppStoreName" formControlName="appStore" class="form-control val">
+                    <div class="alert" *ngIf="!sampleDetails.controls['appStore'].valid">
+                      Please enter valid Details
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="iconStyle">
+                    <a><i class="fab fa-google-play fa-2x"></i></a>
+                  </div>
+                  <div class="textStyle">
+                    <input placeholder="PlayStoreName" formControlName="playStore" class="form-control val">
+                    <div class="alert" *ngIf="!sampleDetails.controls['playStore'].valid">
+                      Please enter valid Details
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <input type="button" class="btn btn-info" value="SUBMIT" (click)="submitVal()">
+            </div>
+          </div>
+        </form>
+
+      <div class="row" *ngIf="showMsg"  style="height: 450px; overflow: scroll;">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10" >
+          <h6 class="thank-style">Thank you for your time!</h6>
+          <p>A detailed analysis report, based on your responses will be mailed to you shortly.</p>
+          <h6 class="thank-style">Preview the details</h6>
+
+          <div style="align-items: center; margin:0 auto; background-color: #DFEFFF">
+            <img src="https://kairosd-images.s3.amazonaws.com/Kairos_Logo_new.png" alt=" " width="194" height="78" style="display: block;
+            margin-left: auto;
+            margin-right: auto;">
+          </div>
+          <div style="background-color: #57A0EA; margin: 0 auto">
+            <div class="row">
+              <div class="col-sm-7 col-md-7">
+                <span> <img src="https://kairosd-images.s3.amazonaws.com/envelope.png" alt="" border="0" height="18"
+                    width="18" style="margin-left: 5%;"> &nbsp; customerfirst@kairostech.com</span>
+              </div>
+              <div class="col-sm-5 col-md-5">
+                <span style="text-align: center"> <img src="https://kairosd-images.s3.amazonaws.com/1.png"  height="16"
+                    width="16" style="
+                   margin-left: 5%;">&nbsp; &nbsp;8374782569</span>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #ffff; padding: 12px;">
+            <p style="margin-top: 1em">Email:{{userDetails.email}}</p>
+            <p>Full Name:{{userDetails.name}}</p>
+            <p>Company Name:{{userDetails.company_name}}</p>
+            <p>Designation:{{userDetails.designation}}</p>
+            <p>Industry:{{customerDetails.industry}}</p>
+            <p>Organizational Strategy:{{customerDetails.organizational_strategy}}</p>
+            <p>Customer Experience:{{customerDetails.customer_experience}}</p>
+            <p>Realtime Communication:{{customerDetails.realtime_communication}}</p>
+            <p>Information Model:{{customerDetails.information_model}}</p>
+            <p>Automated Analytics:{{customerDetails.automated_analytics}}</p>
+            <p>It Devops:{{technologyDetails.it_devops}}</p>
+            <p>Continuous Integration:{{technologyDetails.continuous_integration}}</p>
+            <p>ChatBots ChatOps:{{technologyDetails.chatBots_chatOps}}</p>
+            <p>Social Handles:{{technologyDetails.social_handles}}</p>
+            <p>linkedin:{{technologyDetails.extra_info.linkedin_url}}</p>
+            <p>facebook:{{technologyDetails.extra_info.facebook_url}}</p>
+            <p>twitter:{{technologyDetails.extra_info.twitter_url}}</p>
+            <p>Playstore:{{technologyDetails.extra_info.playstore_name}}</p>
+            <p>Appstore:{{technologyDetails.extra_info.appstore_name}}</p>
+            <p style="margin-bottom: 1em">Enterprise_Cloud Percentage:{{technologyDetails.enterprise_percentage}}</p>
+          </div>
+          <div style="background-color: #57A0EA; text-align: center">@Kairos Digital</div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </mat-card>
+    </div>
+  </div>
+</div>

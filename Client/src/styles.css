@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.ng5-slider .ng5-slider-pointer{
+  background-color: #0A6EB7 !important;
+}
+.imgStyles {
+  width: 200px;
+  margin-top: -20px;
+}
+.placeStyles{
+  color:#000;
+  font-size: 14px;
+}

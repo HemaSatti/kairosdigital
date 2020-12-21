@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .ct-series-a .ct-slice-pie {
+            fill: hsl(100, 20%, 50%); /* filling pie slices */
+            stroke: white; /*giving pie slices outline */
+            stroke-width: 5px;  /* outline width */
+        }
+
+        .ct-series-b .ct-slice-pie {
+            fill: hsl(10, 40%, 60%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+        .ct-series-c .ct-slice-pie {
+            fill: hsl(120, 30%, 80%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+        .ct-series-d .ct-slice-pie {
+            fill: hsl(90, 70%, 30%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+        .ct-series-e .ct-slice-pie {
+            fill: hsl(60, 140%, 20%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+    <div class ="col-md-12">
+<!--    <div style="background-color: #dfefff;" class="text-center"><img src="https://kairosd-images.s3.amazonaws.com/Kairos_Logo_new.png"  width="140px" ></div>-->
+        <p class="text-center">Kairos</p>
+    </div>
+    </div>
+    <div class = "row">
+        <div class="col-md-6 paddingOfCols">
+            <p style="float:left">customerfirst@kairostech.com</p>
+        </div>
+        <div class="col-md-6 paddingOfCols">
+            <p style="float:right">8374782569</p>
+        </div>
+        </div>
+<!--    </div>-->
+    <div class ="row" style="margin-left: 30px;">
+        <label align="center">Hello ${name}</label>
+        <p> Welcome to Kairos Digital Transformation</p>
+        <p><b>Designation</b>: &nbsp;${designation}</p>
+        <p><b>Industry</b>:&nbsp;${industry} </p>
+        <p><b>Organizational Strategy</b>:${commonContent} General content paragraph one.<br/>${organizational_strategy}</p>
+        <p><b>Customer Experience</b>:${commonContent} General content paragraph two.<br/>${customer_experience}</p>
+        <p><b>Realtime Communication</b>:${commonContent} General content paragraph three.<br/>${realtime_communication}</p>
+        <p><b>Information Model</b>:${commonContent} General content paragraph four.<br/>${information_model} </p>
+        <p><b>Automated Analytics</b>:${commonContent} General content paragraph five.<br/>${automated_analytics} </p>
+        <p><b>IT Devops</b>:${commonContent} General content paragraph six.<br/>${it_devops} </p>
+        <p><b>Continuous Integration</b>:${commonContent} General content paragraph seven.<br/>${continuous_integration}</p>
+        <p><b>ChatBots ChatOps</b>:${commonContent} General content paragraph eight.<br/>${chatBots_chatOps} </p>
+        <p><b>Social Handles</b>:${commonContent} General content paragraph nine.<br/>${social_handles} </p>
+        <p><b>Linkedin URL</b>: &nbsp;${linkedin_url} </p>
+        <p><b>Facebook URL</b>: &nbsp;${facebook_url} </p>
+        <p><b>Twitter URL</b>: &nbsp;${twitter_url} </p>
+        <p><b>AppStore Name</b>: &nbsp;${appstore_name} </p>
+        <p><b>PlayStore Name</b>: &nbsp;${playstore_name} </p>
+        <p><b>Enterprise Percentage</b>: &nbsp;${enterprise_percentage}</p>
+<!--        </label><br/>-->
+    </div>
+    <div class="row">
+        <div class = "col-xs-4" style="background-color:yellow; ">
+            <div style="height:30%; width:30%;" >
+            <div class="ct-chart ct-golden-section"></div>
+            <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+            <script>
+                var data = {
+                    // series: [parseInt('${enterprise_percentage}'), 100 - parseInt('${enterprise_percentage}')],
+                    series: [40, 60],
+                };
+                new Chartist.Pie('.ct-chart', data);
+            </script>
+        </div>
+        </div>
+        <div class="col-xs-4" style="background-color:red;">
+            <div style="height:30%; width:30%" class="text-center">
+            <span class="ct-chart1 ct-golden-section1"></span>
+            <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+            <script>
+                var data = {
+                    // series: [parseInt('${enterprise_percentage}'), 100 - parseInt('${enterprise_percentage}')],
+                    series: [50, 50],
+                };
+                new Chartist.Pie('.ct-chart1', data);
+            </script>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">Enterprise Percentage</div>
+        <div class="col-xs-4">Industry Percentage</div>
+    </div>
+</div>
+</body>
+</html>

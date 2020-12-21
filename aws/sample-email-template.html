@@ -1,0 +1,484 @@
+<html>
+<head>
+    <title>kairos D</title>
+    <!--    <link href="https//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css"/>-->
+    <link href="https//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            width:22px;
+            height:22px;
+        }
+
+        .ct-series-a .ct-slice-pie {
+            fill: hsl(100, 20%, 50%); /* filling pie slices */
+            stroke: white; /*giving pie slices outline */
+            stroke-width: 5px;  /* outline width */
+        }
+
+        .ct-series-b .ct-slice-pie {
+            fill: hsl(10, 40%, 60%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+        .ct-series-c .ct-slice-pie {
+            fill: hsl(120, 30%, 80%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+        .ct-series-d .ct-slice-pie {
+            fill: hsl(90, 70%, 30%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+        .ct-series-e .ct-slice-pie {
+            fill: hsl(60, 140%, 20%);
+            stroke: white;
+            stroke-width: 5px;
+        }
+
+    </style>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <!-- //Custom Theme files -->
+    <!-- Responsive Styles and Valid Styles -->
+    <style type="text/css">
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            width: 100%;
+        }
+         .outer-border {
+                   width: 715px;
+                   height: 535px;
+                   padding: 20px;
+                   text-align: center;
+                   border: 10px solid #787878
+        }
+
+        svg.ct-chart-pie {
+            width: 100%;
+            /*height: 100%;*/
+            margin-left: -180px;
+        }
+        table {
+            font-size: 14px;
+            border: 0;
+        }
+
+        /* ----------- responsivity ----------- */
+        @media only screen and (max-width: 800px) {
+            table.container.top-header-left {
+                width: 726px;
+            }
+        }
+
+        @media only screen and (max-width: 736px) {
+            table.container.top-header-left {
+                width: 684px;
+            }
+        }
+
+        @media only screen and (max-width: 667px) {
+            table.container.top-header-left {
+                width: 600px;
+            }
+
+            table.container-middle {
+                width: 565px;
+            }
+
+            a.logo-text img {
+                width: 100%;
+                height: inherit;
+            }
+
+            table.logo {
+                width: 40%;
+            }
+
+            table.mail_left {
+                width: 200px;
+            }
+
+            td.mail_gd, td.mail_gd a {
+                text-align: center !important;
+            }
+
+            td.ban_pad {
+                height: 48px;
+            }
+
+            td.future {
+                font-size: 2em !important;
+            }
+
+            td.ban_tex {
+                height: 18px;
+            }
+
+            table.ban-hei {
+                height: 315px !important;
+            }
+
+            td.ser_pad {
+                height: 50px;
+            }
+
+            td.wel_text {
+                font-size: 2.1em !important;
+            }
+
+            td.ser_text {
+                line-height: 2em !important;
+                font-size: 1em !important;
+
+            }
+
+            table.twelve_one {
+                width: 316px;
+            }
+
+            table.twelve_two {
+                width: 229px;
+            }
+
+            td.pic_one img {
+                width: 100%;
+                height: inherit;
+            }
+
+            table.ser_left_two {
+                width: 100px;
+            }
+
+            table.ser_left_one {
+                width: 200px;
+            }
+
+            img.full {
+                width: 100%;
+            }
+
+            table.twelve_three {
+                width: 272px;
+            }
+
+            td.ser_text2 {
+                font-size: 1.5em !important;
+            }
+
+            table.cir_left {
+                width: 276px;
+            }
+
+            table.twelve_four {
+                width: 200px;
+            }
+
+            table.twelve_five {
+                width: 337px;
+            }
+
+            td.ser_one {
+                height: 45px;
+            }
+
+            table.foo {
+                width: 370px;
+            }
+        }
+    </style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  
+<div class="outer-border">
+    <table border="5%" width="100%" cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td width="100%" align="center" valign="top" bgcolor="062f3c" style="">
+                <table>
+                    <tr>
+                        <td class="top_mar" height="50"></td>
+                    </tr>
+                </table>
+                <!-- main content -->
+                <table style="box-shadow:0px 0px 0px 0px #E0E0E0;" width="800" border="0" cellpadding="0"
+                       cellspacing="0" align="center" class="container top-header-left">
+                    <tr bgcolor="#dfefff">
+                        <td>
+                            <table border="0" width="650" align="center" cellpadding="0" cellspacing="0"
+                                   class="container-middle nav-head">
+                                <tr>
+                                    <td height="5"></td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <img src="https://kairosd-images.s3.amazonaws.com/Kairos_Logo_new.png" alt=" "
+                                             width="140px"
+                                             style="align-items:center; justify-content: center; margin-left:25%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="5"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#57a0ea">
+                        <td>
+                            <table border="0" width="650" align="center" cellpadding="0" cellspacing="0"
+                                   class="container-middle nav-head">
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                               style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="mail_left" align="left" border="0" cellpadding="0"
+                                                           cellspacing="0" width="500">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="mail_gd"
+                                                                style=" text-align: left; font-size:14px; font-family:Candara; color: #FFFFFF;">
+                                                                <a href="mailto:info@example.com"
+                                                                   style="color:#fff;text-decoration:none;margin-left: -50px;"><img
+                                                                        src="https://kairosd-images.s3.amazonaws.com/envelope.png"
+                                                                        alt="" border="0" height="18" width="18">&nbsp;
+                                                                    &nbsp;customerfirst@kairostech.com</a>
+                                                            </td>
+                                                            <td align="right"
+                                                                style="font-size:14px;color:#f5f5f5;font-family:Arial,serif">
+                                                                <img src="https://kairosd-images.s3.amazonaws.com/1.png"
+                                                                     alt="" border="0" height="16" width="16">&nbsp;
+                                                                &nbsp;8374782569
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="ban-hei" width="100%" border="0" align="center" cellpadding="0"
+                                   cellspacing="0"
+                                   style="background:url(https://kairosd-images.s3.amazonaws.com/ban1.jpg); background-size:cover;"
+                                   height="120">
+                                <tbody>
+                                <tr>
+                                    <td class="ban_pad" height="80"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="ban_info" border="0" cellpadding="0" cellspacing="0"
+                                                           width="500">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="ban_tex" height="5"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="future"
+                                                                style="font-size:16px; color:#fff;text-transform:capitalize;font-family:Candara;  line-height:1.0em; margin-left: 25%">
+                                                                Hello ${name}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ban_tex" height="90"></td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#ffffff">
+                        <td>
+                            <table border="0" width="100%" align="left" cellpadding="0" cellspacing="0"
+                                   class="container-middle">
+                                <tbody>
+
+                                <tr>
+                                    <td class="ser_pad" height="20"></td>
+                                </tr>
+                                <tr>
+
+                                    <td class="ser_text" align="left"
+                                        style="color:#464646; font-size: 10px; font-family: Candara; line-height:1.8em; padding: 2em;">
+                                        <p> Welcome to Kairos Digital Transformation</p>
+                                        <label><b>Designation</b>: &nbsp;${designation}</label><br/>
+                                        <label><b>Industry</b>:&nbsp;${industry} </label><br/>
+                                        <label><b>Organizational Strategy</b>:${commonContent} General content paragraph one.<br/>${organizational_strategy}</label><br/>
+                                        <label><b>Customer Experience</b>:${commonContent} General content paragraph two.<br/>${customer_experience}</label><br/>
+                                        <label><b>Realtime Communication</b>:${commonContent} General content paragraph three.<br/>${realtime_communication}</label><br/>
+                                        <label><b>Information Model</b>:${commonContent} General content paragraph four.<br/>${information_model} </label><br/>
+                                        <label><b>Automated Analytics</b>:${commonContent} General content paragraph five.<br/>${automated_analytics} </label><br/>
+                                        <label><b>IT Devops</b>:${commonContent} General content paragraph six.<br/>${it_devops} </label><br/>
+                                        <label><b>Continuous Integration</b>:${commonContent} General content paragraph seven.<br/>${continuous_integration}</label><br/>
+                                        <label><b>ChatBots ChatOps</b>:${commonContent} General content paragraph eight.<br/>${chatBots_chatOps} </label><br/>
+                                        <label><b>Social Handles</b>:${commonContent} General content paragraph nine.<br/>${social_handles} </label><br/>
+                                        <label><b>Linkedin URL</b>: &nbsp;${linkedin_url} </label><br/>
+                                        <label><b>Facebook URL</b>: &nbsp;${facebook_url} </label><br/>
+                                        <label><b>Twitter URL</b>: &nbsp;${twitter_url} </label><br/>
+                                        <label><b>AppStore Name</b>: &nbsp;${appstore_name} </label><br/>
+                                        <label><b>PlayStore Name</b>: &nbsp;${playstore_name} </label><br/>
+                                        <label><b>Enterprise Percentage</b>: &nbsp;${enterprise_percentage}</label><br/>
+                                        </label><br/>
+                                    </td>
+                                <tr>
+                                    <td class="ser_text"
+                                        style="color:#464646; font-size: 10px; font-family: Candara; line-height:1.0em; padding: 2em;">
+                                        <span style="text-align: left; margin-left: 3rem; height: 150px; width:150px"> <div class="ct-chart ct-golden-section"></div>
+
+                                        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+                                        <script>
+                                            var data = {
+                                                series: [parseInt('${enterprise_percentage}'), 100 - parseInt('${enterprise_percentage}')],
+                                                //  series: [40, 60],
+                                            };
+                                            new Chartist.Pie('.ct-chart', data);
+                                        </script></span>
+                                        <span style="float: right; margin-top: -15em; height: 150px; width:150px;margin-right: 150px"><div class="ct-chart1 ct-square ct-golden-section1 ct-square"></div>
+
+                                        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+                                        <script>
+                                            var data = {
+                                                // series: [parseInt('${enterprise_percentage}'), 100 - parseInt('${enterprise_percentage}')],
+                                                 series: [47, 53],
+                                            };
+                                            new Chartist.Pie('.ct-chart1', data);
+                                        </script> </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ser_text"
+                                        style="color:#464646; font-size: 10px; font-family: Candara; line-height:1.0em; padding: 2em;">
+                                        <span style="text-align: left; margin-left: 1rem; font-size: 12px;"> <label><b>Enterprise Percentage </b></label></span>
+                                        <span style="float: right;margin-right: 340px; font-size: 12px"><b>Industry Percentage </b></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ser_text" align="left"
+                                        style="color:#464646; font-size: 10px; font-family: Candara; line-height:1.8em; padding: 2em;">
+                                        <label>Conclusion paragraph. </label>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr bgcolor="ffffff">
+                        <td>
+                            <table class="us_on" border="0" width="300" align="center" cellpadding="0" cellspacing="0"
+                                   class="container-middle">
+
+                                <td>
+                                    <table align="center" cellpadding="0" cellspacing="0"
+                                           style="border-bottom:1px solid #f7f7f7">
+                                    </table>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <table class="follow" width="100" align="left" border="0" cellpadding="0"
+                                               cellspacing="0"
+                                               style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20"></td>
+                                </tr>
+
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr bgcolor="#57a0ea">
+                        <td>
+                            <table border="0" width="650" align="center" cellpadding="0" cellspacing="0"
+                                   class="container-middle">
+                                <tr>
+                                    <td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                        <table class="foo" width="375" border="0" align="center" cellpadding="0"
+                                               cellspacing="0">
+                                            <tr>
+                                                <td class="ser_text editable"
+                                                    style="font-family: Candara; font-size: 1em; color: #ffffff; line-height: 24px; float: right; margin-right: 15rem;">
+                                                    © Kairos Digital
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td class="top_mar" height="50"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

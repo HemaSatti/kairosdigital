@@ -1,0 +1,164 @@
+.bg-page {
+  margin: 20px;
+  font-family: Roboto !important;
+  /*-ms-overflow-style: none;*/
+  /*  overflow: -moz-scrollbars-none;*/
+}
+.bg-img{
+  background-image: url("../../assets/images/Kairos_Digital_Transformation_Assessment_Tool_Screen2.jpg");
+  width:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+.example-card {
+  max-width: 750px;
+  padding: 2.3em;
+  width: 80%;
+  margin: 1em auto;
+  background: #ffffffe6;
+  margin-top: 3em;
+  border-bottom: 5px solid #0A6EB7;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 0rem;
+}
+.colstyles{
+  color: #0A6EB7;
+}
+.iconStyle{
+  float:left;
+  margin-left: 1%;
+}
+.fab{
+  margin: 5px;
+}
+.textStyle{
+  float:right;
+  margin-left: 3%;
+}
+.val1{
+  margin-top: 5px;
+  width:35em;
+  font-size: 1em;
+}
+.alert {
+  animation: 2s alertAnim forwards;
+  font-size: 12px;
+  position: relative;
+  padding: 0.05rem 0rem;
+  border: 1px solid transparent;
+  color: red;
+  margin: 0px;
+}
+.val{
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1em;
+}
+.btn-info {
+  margin-top: 1rem;
+  background-color: #0A6EB7;
+  border-color: #0A6EB7;
+}
+.thank-style {
+  color: #0A6EB7;
+}
+::-webkit-scrollbar {
+  -ms-overflow-style:none;
+  overflow:scroll;
+}
+html {
+  -ms-overflow-style: none;
+}
+.hea-change{
+  text-align: center;
+  color: lavender;
+}
+
+@media(min-width:320px) and (max-width:767px) {
+  .bg-img{
+    background-image: url("../../assets/images/Kairos_Digital_Transformation_Assessment_Tool_Screen2_Mobile.jpg");
+    overflow: scroll;
+  }
+  .example-card {
+    width: 87%;
+    margin-top: 20px;
+  }
+  .imgStyles {
+    width: 120px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .inputstyle {
+    width:200px;
+    margin-top: 8px;
+  }
+  .val1{
+    margin-top: 5px;
+    width:100%;
+  }
+  .hea-change{
+    margin-top: 10px;
+    font-size: 22px;
+  }
+}
+
+@media(min-width:768px) and (max-width: 1023px)  {
+  .example-card {
+    width: 87%;
+    margin-top: 1em;
+    overflow: scroll;
+  }
+  label {
+    font-size: 18px;
+  }
+  .alert {
+    font-size: 14px;
+  }
+  .bg-img{
+    background-position: right;
+    overflow: scroll;
+  }
+  .val1{
+     margin-top: 5px;
+   }
+  .hea-change{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .example-card {
+    width: 90%;
+    margin-top: 1em;
+  }
+  .bg-img{
+    overflow: scroll;
+    background-position: center;
+  }
+  label {
+    font-size: 18px;
+  }
+  .alert {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .hea-change{
+    margin-top: 20px;
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1025px){
+  .bg-img{
+    overflow: scroll;
+  }
+}

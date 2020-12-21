@@ -1,0 +1,75 @@
+{
+	"Company": [
+		{
+			"questionNumber":"Q1",
+			"question":"Is there an organizational strategy defined with deliverables and budgeting for creating digital assets such as mobile apps, social campaigns etc?",
+			"questionType":"yes/no",
+			"yesResponse":"Q1A",
+			"noResponse":"Q1B"
+		},
+		{
+			"questionNumber":"Q2",
+			"question": "Do you have an Omnichannel mechanism to capture customer experiences through incidents/feedback/surveys/logs?",
+			"questionType":"yes/no",
+			"yesResponse":"Q2A",
+			"noResponse":"Q2B"
+		},
+		{
+			"questionNumber":"Q3",
+			"question":" Is there a real-time communication channel between your operations(production/customer-support) team and IT/development? ",
+			"questionType":"yes/no",
+			"yesResponse":"Q3A",
+			"noResponse":"Q3B"
+		},
+		{
+			"questionNumber":"Q4",
+			"question": "Is there as information model defined for all the key business data flowing at all touchpoints, including outside of the traditional databases?",
+			"questionType":"yes/no",
+			"yesResponse":"Q4A",
+			"noResponse":"Q4B"
+		},
+		{
+			"questionNumber":"Q5",
+			"question": "Does any automated analytics engine give visibility and direction in embracing your customers?",
+			"questionType":"yes/no",
+			"yesResponse":"Q5A",
+			"noResponse":"Q5B"
+		}
+	],
+
+	"Technology":[
+		{
+			"questionNumber":"Q6",
+			"question": "Have you reengineered your IT processes to leverage DevOps?",
+			"questionType":"yes/no",
+			"yesResponse":"Q6A",
+			"noResponse":"Q6B"
+		},
+		{
+			"questionNumber":"Q7",
+			"question": "Do you use Continuous Integration tools like Jenkins?",
+			"questionType":"yes/no",
+			"yesResponse":"Q7A",
+			"noResponse":"Q7B"
+		},
+		{
+			"questionNumber":"Q8",
+			"question": "Do you use ChatBots/ChatOps tools like Slack, Flock etc?",
+			"questionType":"yes/no",
+			"yesResponse":"Q8A",
+			"noResponse":"Q8B"
+		},
+		{
+			"questionNumber":"Q9",
+			"question": "Is there a monitoring/alerting mechanism in place that ties your social handles and IT departments?",
+			"questionType":"yes/no",
+			"yesResponse":"Q9A",
+			"noResponse":"Q9B"
+		},
+		{
+			"questionNumber":"Q10",
+			"question": "What percentage of your enterprise leverages cloud infrastructure (slider 1-100%)",
+			"questionType":"slider"
+		}
+	]
+}
